@@ -44,3 +44,28 @@ Symfony Docker is available under the MIT License.
 ## Credits
 
 Created by [Kévin Dunglas](https://dunglas.fr), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
+
+
+## Para migraciones 
+
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+
+## Ver credenciales usadas en las direcciones de base de datos 
+
+php bin/console debug:container --env-vars
+
+## Acceder a contenedor 
+
+docker exec -it api-php-1 /bin/sh
+
+docker exec -it api-database-1 /bin/sh
+
+docker exec -it api-caddy-1 /bin/sh
+
+## Volumenes en docker
+
+docker volume ls
+
+## Credenciales de inicio de sesion en admin 
+
