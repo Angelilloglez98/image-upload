@@ -11,7 +11,11 @@ class routes extends AbstractController
     #[Route(path: '/', name: 'home', methods: ['GET'])]
     public function index(): Response
     {
-       return new Response("<h1>HOLA</h1>");
+    
+       return $this->render('base.html.twig',[
+        
+       ]);
        
     }
+    
 }
