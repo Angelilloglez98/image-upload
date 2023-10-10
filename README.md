@@ -57,7 +57,7 @@ php bin/console debug:container --env-vars
 
 ## Acceder a contenedor 
 
-docker exec -it api-php-1 /bin/sh
+docker exec -it unsplashdev-php-1 /bin/sh
 
 docker exec -it api-database-1 /bin/sh
 
@@ -67,5 +67,4 @@ docker exec -it api-caddy-1 /bin/sh
 
 docker volume ls
 
-## Credenciales de inicio de sesion en admin 
 

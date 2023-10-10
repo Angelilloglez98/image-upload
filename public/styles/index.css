@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    padding: 30px;
+    width: 50%;
+    background-color: white ;
+    border-radius: 10px;
+    min-width: 200px;
+    display: none;
+}
+.buttons{
+    width: fit-content;
+}
+.active{
+    animation-name: hideShow;
+    animation-duration: 0.5s;
+    display: block;
+
+}
+
+.filtro{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    overflow: hidden;
+    display: none;
+    
+}
+img{
+    border-radius: 10px;
+}
+
+@keyframes hideShow {
+    0%{
+        opacity: 0%;
+        
+    }
+    100%{
+        opacity: 100%;
+        
+    }
+}
+
+
+
+
+
