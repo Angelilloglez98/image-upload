@@ -1,4 +1,4 @@
-{% set films = Search('App\\Entity\\Pictures')  %}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -28,7 +28,7 @@
 						<p class="subtitle">Drag & Drop your image here</p>
 					</div>
 					<p class="subtitle">Or</p>
-					<form method="POST" action="/upload" enctype="multipart/form-data">
+					<form method="POST" enctype="multipart/form-data">
 						<div class="inputs_upload">
 							<input type="file" id="fileInput" multiple="false" class="custom-file-input" name="file">
 							<label class="custom-file-label" for="fileInput">Choose a file</label>

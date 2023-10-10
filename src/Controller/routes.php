@@ -12,11 +12,11 @@ class routes extends AbstractController
     {
         $uploadMaxFilesize = ini_get('upload_max_filesize');
         $postMaxSize = ini_get('post_max_size');
-       return $this->render('base.html.twig',[
-        'uploadMaxFilesize' => $uploadMaxFilesize,
-        'postMaxSize' => $postMaxSize,
-       ]);
-       
+
+        return $this->render('base.html.twig',[
+            'uploadMaxFilesize' => $uploadMaxFilesize,
+            'postMaxSize' => $postMaxSize,
+        ]);
     }
     
 

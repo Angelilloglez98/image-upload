@@ -8,7 +8,6 @@ const card_saving = document.querySelector('.card_saving');
 async function Send(e) {
     e.preventDefault();
 
-    
     card_upload.style.display='none';
     card_saving.style.display='flex';
 
@@ -18,20 +17,21 @@ async function Send(e) {
         Data.append('files[]', file);
     }
     
+    console.log(Data);
 
-        await fetch('/upload',{
-            method: 'POST',
-            body: Data
-        }).then((res) => res.json())
-        .then(data=>{
-            
-            card_saving.style.display='none';
-            
-            window.location.href=data['mensaje'];
-        }).catch((error =>{
-            card_saving.style.display='none';
-            card_upload.style.display='flex';
-        }))
+    await fetch('/upload',{
+        method: 'POST',
+        body: Data
+    }).then((res) => res.json())
+    .then(data=>{
+        
+        card_saving.style.display='none';
+        
+        window.location.href=data['mensaje'];
+    }).catch((error =>{
+        card_saving.style.display='none';
+        card_upload.style.display='flex';
+    }))
 
     
 }
