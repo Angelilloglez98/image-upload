@@ -3017,6 +3017,7 @@
         },
         {
             "name": "symfony/mime",
+<<<<<<< HEAD
             "version": "v6.3.3",
             "source": {
                 "type": "git",
@@ -3027,6 +3028,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mime/zipball/9a0cbd52baa5ba5a5b1f0cacc59466f194730f98",
                 "reference": "9a0cbd52baa5ba5a5b1f0cacc59466f194730f98",
+=======
+            "version": "v6.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "d5179eedf1cb2946dbd760475ebf05c251ef6a6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/d5179eedf1cb2946dbd760475ebf05c251ef6a6e",
+                "reference": "d5179eedf1cb2946dbd760475ebf05c251ef6a6e",
+>>>>>>> 8782a257b37bddab0cd2db12b1bbbc12ef66eac3
                 "shasum": ""
             },
             "require": {
@@ -3081,7 +3094,11 @@
                 "mime-type"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mime/tree/v6.3.3"
+=======
+                "source": "https://github.com/symfony/mime/tree/v6.3.5"
+>>>>>>> 8782a257b37bddab0cd2db12b1bbbc12ef66eac3
             },
             "funding": [
                 {
@@ -3097,7 +3114,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-07-31T07:08:24+00:00"
+=======
+            "time": "2023-09-29T06:59:36+00:00"
+>>>>>>> 8782a257b37bddab0cd2db12b1bbbc12ef66eac3
         },
         {
             "name": "symfony/polyfill-intl-grapheme",

@@ -9,7 +9,7 @@ php bin/console debug:container --env-vars
 
 ## Acceder a contenedor 
 
-docker exec -it image-upload-php-1 /bin/sh
+docker exec -it unsplashdev-php-1 /bin/sh
 
 docker exec -it image-upload-database-1 /bin/sh
 
