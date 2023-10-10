@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250,250,251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_clip{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    padding: 3em 2em;
+    box-shadow: 0px 3px 5px rgb(190, 190, 190);
+    border-radius: 10px;
+}
+.icon{
+    color: rgb(0, 163, 0);
+}
+.parrafo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+.image{
+    width: 25em;
+    overflow: hidden;
+    max-height: 300px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgb(190, 190, 190);
+    border-radius: 10px;
+}
+.image>img{
+    border-radius: 10px;
+}
+.copy{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250,250,251);
+    border: 2px solid rgb(233, 233, 233);
+    padding: 0px 0px 0px 10px ;
+    border-radius: 10px;
+
+}
+.inputUrl{
+    border: none;
+    background-color: rgb(250,250,251);
+    width: 65%;
+    outline: none;
+}
+.copy button{
+    padding: 1em 1.5em 1em 1.5em;
+    margin: 1px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(47,128,237);
+    color: white;
+    cursor: pointer;
+}
+.copy button:hover{
+    transform: scale(0.98);
+}
+.copy button:active{
+    transform: scale(1);
+}
+
+/* Full image */
+
+.full_image{
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.80);
+}
+.full_image img{
+    width: 80%;
+}

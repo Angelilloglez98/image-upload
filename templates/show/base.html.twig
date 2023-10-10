@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('/style/card_clip.css') }}">
+    <script src="/script/clip.js" defer></script>
+</head>
+<body>
+
+    <div class="image-container" style="display:none">
+        <img src='{{ asset("/uploads/brochures/") }}{{image}}' alt="Imagen" id="max_image"></img>
+    </div>
+
+    <div class="container">
+        <div class="card_clip">
+            <i class="fas fa-check-circle fa-3x icon" ></i> 
+            <h3 class="parrafo">Uploaded Successfully!</h3>
+            <div class="image">
+             <img src='{{ asset("/uploads/brochures/") }}{{image}}' style="width:100%" style="imagen" id="min_image">
+            </div>
+            <div class="copy">
+                <input type="text" readonly class="inputUrl">
+                <button class="button_copy"> <p>Copy link</p></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
