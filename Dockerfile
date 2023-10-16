@@ -125,7 +125,7 @@ RUN rm -f .env.local.php
 FROM caddy:2-alpine AS app_caddy
 
 WORKDIR /srv/app
-USER root
 COPY --from=app_caddy_builder --link /usr/bin/caddy /usr/bin/caddy
+RUN chmod +x /usr/bin/caddy
 COPY --from=app_php --link /srv/app/public public/
 COPY --link docker/caddy/Caddyfile /etc/caddy/Caddyfile
