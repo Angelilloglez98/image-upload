@@ -123,9 +123,10 @@ RUN rm -f .env.local.php
 
 # Caddy image
 FROM caddy:2-alpine AS app_caddy
-
+USER root
 WORKDIR /srv/app
 COPY --from=app_caddy_builder --link /usr/bin/caddy /usr/bin/caddy
 RUN chmod +x /usr/bin/caddy
+USER caddy
 COPY --from=app_php --link /srv/app/public public/
 COPY --link docker/caddy/Caddyfile /etc/caddy/Caddyfile
