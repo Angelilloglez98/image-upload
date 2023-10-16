@@ -10,7 +10,7 @@ FROM caddy:2.7.2-builder-alpine AS app_caddy_builder
 
 RUN xcaddy build v2.7.2 \
 	--with github.com/dunglas/mercure/caddy \
-	#--with github.com/dunglas/vulcain/caddy
+	--with github.com/dunglas/vulcain/caddy
 
 # Prod image
 FROM php:8.2-fpm-alpine AS app_php
